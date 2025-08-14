@@ -1,0 +1,25 @@
+{
+  "name": "wanderlust",
+  "version": "1.0.0",
+  "description": "An online platform that connects property owners with individuals seeking short-term rentals.\r <br>\r Author: Nitin Dagar",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nitindagar09/WanderLust.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nitindagar09/WanderLust/issues"
+  },
+  "homepage": "https://github.com/nitindagar09/WanderLust#readme",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "mongoose": "^8.17.1"
+  }
+}
