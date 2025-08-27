@@ -44,6 +44,18 @@ body{
     font-size: 1.2rem;
 }
 
+.fa-square-facebook{
+    color: #1877F2;
+}
+
+.fa-square-instagram{
+    color: rgba(203, 4, 4, 0.833);
+}
+
+.fa-linkedin{
+    color: #0077B5;
+}
+
 .f-info{
     text-align: center;
     height: 8rem;
