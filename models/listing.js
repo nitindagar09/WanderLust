@@ -1,6 +1,8 @@
 const mongoose = require("mongoose");
 const Review = require("./review.js");
-const MONGO_URL = "mongodb://127.0.0.1:27017/wanderlust";
+// const MONGO_URL = "mongodb://127.0.0.1:27017/wanderlust";
+const dbUrl = process.env.ATLASDB_URL; 
+
 
 main().then(()=>{
     console.log("Connect to db");
@@ -10,7 +12,7 @@ main().then(()=>{
 });
 
 async function main(){
-    await mongoose.connect(MONGO_URL);
+    await mongoose.connect(dbUrl);
 }
 
 const Schema = mongoose.Schema;
@@ -23,9 +25,8 @@ const listingSchema = Schema({
         type: String,
     },
     image: {
-        type: String,
-        default: "https://images.unsplash.com/photo-1754265222750-687ab87f5549?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        set: (v)=> v === ""? "https://images.unsplash.com/photo-1754265222750-687ab87f5549?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" : v,
+       url: String,
+       filename: String,
     },
     price: {
         type: Number,
