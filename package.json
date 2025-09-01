@@ -1,5 +1,5 @@
 {
-  "engines":{
+  "engines": {
     "node": "22.14.0"
   },
   "name": "wanderlust",
@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/nitindagar09/WanderLust#readme",
   "dependencies": {
-    "cloudinary": "^2.7.0",
+    "cloudinary": "^1.32.0",
     "connect-flash": "^0.1.1",
     "connect-mongo": "^5.1.0",
     "dotenv": "^17.2.1",
