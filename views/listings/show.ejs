@@ -81,9 +81,9 @@
 
                             <hr>
                             <p><b>All Reviews</b></p>
-                            <div class="row">
+                            <div class="row d-flex justify-content-center">
                                 <% for(review of list.reviews){ %>
-                                    <div class="card col-5 ms-3 mb-3">
+                                    <div class="card col-12 col-md-5 mb-3 p-2 review-card">
                                         <div class="card-body">
                                             <h5 class="card-title"><i>@<%= review.author.username %></i></h5>
                                             <p class="starability-result card-text" data-rating="<%= review.rating %>">

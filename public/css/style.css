@@ -127,3 +127,8 @@ body{
     padding-left: 0;
     padding-right: 0;
 }
+
+.review-card {
+    margin: 0 auto; /* centers */
+    float: none;    /* removes float issues */
+}
